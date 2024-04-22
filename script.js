@@ -2,17 +2,13 @@
 
 const title = document.querySelector("#submit").addEventListener("click", async (e) => {
   e.preventDefault();
-  // title
   const title = document.querySelector("#title").value;
   const content = document.querySelector("#content").value;
-  // content
   const res = await handlePost(title, content);
   console.log(res);
-
   document.querySelector("#result-id").textContent = `created POST ID is ${res.id}`
   document.querySelector("#result-title").textContent = `created POST title is ${res.title}`
   document.querySelector("#result-content").textContent = `created POST content is ${res.content}`
-
 });
 
 const handlePost = async (title, content) => {
