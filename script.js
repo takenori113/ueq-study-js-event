@@ -1,6 +1,6 @@
 
 
-const title = document.querySelector("#submit").addEventListener("click", async (e) => {
+document.querySelector("#submit").addEventListener("click", async (e) => {
   e.preventDefault();
   const title = document.querySelector("#title").value;
   const content = document.querySelector("#content").value;
